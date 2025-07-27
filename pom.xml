@@ -6,6 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.5.6</version>
+		<version>2.5.6-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.javaproject</groupId>
@@ -120,11 +121,11 @@
 	 <distributionManagement>
         <repository>
             <id>maven-releases</id>
-            <url>http://172.166.120.205:8081/repository/maven-releases/</url>
+            <url>http://172.166.218.106:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://172.166.120.205:8081/repository/maven-snapshots/</url>
+            <url>http://172.166.218.106:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
