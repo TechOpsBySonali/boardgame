@@ -41,9 +41,12 @@ pipeline {
         
         stage('Publish to Nexus') {
             steps {
-                withMaven(globalMavenSettingsConfig: 'maven-settings', jdk: '', maven: '', mavenSettingsConfig: '', traceability: true) {
+                withMaven(
+                    globalMavenSettingsConfig: 'maven-settings', // This should match the ID of your Config File
+                    traceability: true
+                ) {
                     sh 'mvn deploy'
-                }               
+                }
             }
         }
     }
